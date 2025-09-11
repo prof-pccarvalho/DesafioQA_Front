@@ -19,6 +19,10 @@
     "esbuild": "^0.17.0"
   },
   "cypress-cucumber-preprocessor": {
-    "stepDefinitions": "cypress/e2e/stepDefinitions/*.{js,ts}"
+    "nonGlobalStepDefinitions": false,
+    "stepDefinitions": [
+      "cypress/e2e/stepDefinitions/**/*.{js,ts}",
+      "cypress/e2e/stepDefinitions/*.{js,ts}"
+  ]
   }
 }
