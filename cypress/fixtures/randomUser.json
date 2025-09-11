@@ -1,0 +1,14 @@
+{
+    "firstName": "Lucas",
+    "lastName": "Ferreira",
+    "email": "lucas.ferreira123@example.com",
+    "gender": "Male",
+    "phone": "11987654321",
+    "birthDate": "15 Mar 1995",
+    "subjects": "Maths",
+    "hobby": "1",
+    "address": "Rua das Flores, 456",
+    "state": "NCR",
+    "city": "Delhi"
+  }
+  

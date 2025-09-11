@@ -1,0 +1,24 @@
+{
+  "name": "desafioqa_front",
+  "version": "1.0.0",
+  "description": "Automação DemoQA com Cypress e Cucumber",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run",
+    "cypress:open": "cypress open"
+  },
+  "keywords": [],
+  "author": "PC Carvalho",
+  "license": "ISC",
+  "devDependencies": {
+    "@4tw/cypress-drag-drop": "^2.3.0",
+    "@badeball/cypress-cucumber-preprocessor": "^15.0.0",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.5",
+    "cypress": "^12.17.4",
+    "cypress-file-upload": "^5.0.8",
+    "esbuild": "^0.17.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "stepDefinitions": "cypress/e2e/stepDefinitions/*.{js,ts}"
+  }
+}

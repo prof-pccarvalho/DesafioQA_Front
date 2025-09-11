@@ -1,0 +1,38 @@
+```markdown
+# DemoQA Cypress Automation
+
+Automação dos testes do site [DemoQA](https://demoqa.com/) usando Cypress e Cucumber (BDD).
+
+## Como rodar
+
+1. Instale as dependências:
+   ```
+   npm install
+   ```
+2. Execute o Cypress:
+   ```
+   npx cypress open
+   ```
+3. Execute em modo headless:
+   ```
+   npm test
+   ```
+
+## Estrutura
+
+- `/cypress/e2e/features`: arquivos .feature (BDD)
+- `/cypress/e2e/stepDefinitions`: steps do Cucumber
+- `/cypress/e2e/pageObjects`: Page Objects
+- `/cypress/fixtures`: dados de teste e arquivos para upload
+
+## Observações
+
+- O arquivo para upload está em `/cypress/fixtures/uploadFile.txt`
+```
+
+---
+
+### Dicas Finais
+
+- Adapte os exemplos para os outros cenários (Web Tables, Progress Bar, etc.) criando novos arquivos em `/pageObjects`, `/features` e `/stepDefinitions`.
+- Use o comando `npx cypress open` para rodar os testes interativamente.
