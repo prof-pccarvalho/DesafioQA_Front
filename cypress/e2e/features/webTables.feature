@@ -11,7 +11,7 @@ Feature: Gerenciar registros na Web Tables do DemoQA
       | firstName | lastName | email              | age | salary | department |
       | Jose      | Souza    | jose@exemplo.com   | 35  | 6000   | Dev        |
     And deleta o registro com email "jose@exemplo.com"
-    Then o registro com email "jose@exemplo.com" nao deve existir
+    Then o registro com email "jose@exemplo.com" não deve existir
 
   Scenario: Criar 12 registros dinamicamente e deletar todos
     Given que o usuario acessa a pagina inicial do DemoQA

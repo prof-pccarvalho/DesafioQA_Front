@@ -2,40 +2,6 @@ const { Given, When, Then } = require('@badeball/cypress-cucumber-preprocessor')
 const progressBarPage = require('../pageObjects/progressBarPage');
 
 /**
- * Step para acessar a página inicial do DemoQA.
- */
-/* Given('que o usuário acessa a página inicial do DemoQA', () => {
-  cy.visit('/');
-  cy.get('.home-body').should('be.visible');
-}); */
-
-/**
- * Step para selecionar o menu principal.
- */
-/* When('seleciona o menu {string}', (menu) => {
-  cy.contains('.card-body', menu).should('be.visible').click();
-  cy.url().should('include', 'widgets');
-}); */
-
-/**
- * Step para clicar no submenu.
- */
-/* When('clica no submenu {string}', (submenu) => {
-  cy.contains('span', submenu).should('be.visible').click();
-  cy.url().should('include', 'progress-bar');
-  cy.get('#startStopButton').should('be.visible');
-}); */
-
-/**
- * Step para clicar no botão Start/Stop.
- */
-/* When('clica no botão {string}', (botao) => {
-  if (botao === 'Start') {
-    progressBarPage.clickStartStop();
-  }
-}); */
-
-/**
  * Step para pausar a barra antes de atingir 25%.
  */
 When('para a barra antes de atingir 25%', () => {
@@ -66,7 +32,7 @@ When('clica no botão "Start" novamente', () => {
  * Step para aguardar até a barra atingir 100%.
  */
 When('aguarda até a barra atingir 100%', () => {
-  progressBarPage.waitForProgressToReach(100);
+  progressBarPage.waitForProgressToReach(100, 20000);
 });
 
 /**

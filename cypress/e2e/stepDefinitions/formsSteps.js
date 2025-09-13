@@ -2,42 +2,6 @@ import { Given, When, Then } from '@badeball/cypress-cucumber-preprocessor';
 import formsPage from '../pageObjects/formsPage';
 
 /**
- * Step para acessar a página inicial do DemoQA.
- * Confirma que o título da página inicial está presente após o acesso.
- */
-/* Given('que o usuario acessa a pagina inicial do DemoQA', () => {
-  cy.visit('/'); // Acessa a baseUrl definida no cypress.config.js
-  // Confirma que a página inicial foi carregada (título "DEMOQA" visível)
-  cy.get('.home-body').should('be.visible');
-}); */
-
-/**
- * Step para selecionar o menu principal pelo texto.
- * @param {string} menu - Nome do menu a ser selecionado.
- * Confirma que o menu está visível e foi clicado.
- */
-/* When('seleciona o menu {string}', (menu) => {
-  // Garante que o menu está visível antes de clicar
-  cy.contains('.card-body', menu).should('be.visible').click();
-  // Confirma que a navegação para o menu ocorreu (URL mudou)
-  cy.url().should('include', menu.toLowerCase());
-}); */
-
-/**
- * Step para clicar no submenu pelo texto.
- * @param {string} submenu - Nome do submenu a ser clicado.
- * Confirma que o submenu está visível e foi clicado.
- */
-/* When('clica no submenu {string}', (submenu) => {
-  // Garante que o submenu está visível antes de clicar
-  cy.contains('span', submenu).should('be.visible').click();
-  // Confirma que a navegação para o formulário ocorreu (URL mudou)
-  cy.url().should('include', 'automation-practice-form');
-  // Confirma que o formulário está visível
-  cy.get('form').should('be.visible');
-}); */
-
-/**
  * Step para preencher todos os campos do formulário com dados aleatórios.
  * Confirma que cada campo foi preenchido corretamente.
  */
